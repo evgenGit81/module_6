@@ -17,17 +17,23 @@ class Car:
 class Nissan(Car):
     """ модель Nissan """
     price = 2500000
-    power = 170
     model = "Nissan"
+    def horse_powers(self):
+        """Мощность двигателя"""
+        print("мощность двигателя: ", 170)
 
 
 class Kia(Car):
     """ модель Kia """
     price = 2750000
-    power = 135
     model = "Kia"
+    def horse_powers(self):
+        """Мощность двигателя"""
+        print("мощность двигателя: ", 132)
 
 
+cars = Car()
+cars.horse_powers()
 nissik = Nissan()
 nissik.horse_powers()
 kiak = Kia()
